@@ -12,7 +12,6 @@ import {
 	CREATE_USER
 } from "./graphql/tags/MyUser";
 
-// ユーザー表示用のリスト
 const UserList = () => {
   const { data, error, loading } = useQuery(GET_USERS);
 
@@ -33,7 +32,6 @@ const UserList = () => {
   );
 };
 
-// 新規ユーザー作成用のComponent
 const UserInput = () => {
   const [state, setState] = useState("");
 
